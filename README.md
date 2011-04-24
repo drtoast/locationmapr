@@ -15,7 +15,7 @@ see http://petewarden.github.com/iPhoneTracker/
 
     sqlite3 consolidated.db
     
-    sqlite> .output location.txt
+    sqlite> .output consolidated.txt
     sqlite> select * from CellLocation;
     sqlite> .quit
     
