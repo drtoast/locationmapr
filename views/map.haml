@@ -1,5 +1,12 @@
-%script{:type=>"text/javascript", :src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"}
+%script{:type=>"text/javascript", :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"}
+%script{:type=>"text/javascript", :src=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"}
 %script{:type=>"text/javascript", :src=>"http://maps.google.com/maps/api/js?sensor=false"}
 %script{:type=>"text/javascript", :src=>"js/map.js"}
+%link{:rel=>"stylesheet", :type=>"text/css", :href=>"css/smoothness/jquery-ui-1.8.12.custom.css"}
 %body{:onload=>"initialize()"}
+  %form#controls
+    From:
+    %input#from{:class => "datepicker", :type=>"text"}
+    To:
+    %input#to{:class => "datepicker", :type=>"text"}
   #map_canvas{:style=>"width:100%; height:100%"}
